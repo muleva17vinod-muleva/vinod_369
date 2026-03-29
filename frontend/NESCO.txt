@@ -1,0 +1,31 @@
+const express = require('express');
+
+const app = express();
+
+// API route
+app.get('/api', (req, res) => {
+    res.json({
+        message: 
+'Hello How are you Guys')
+console.log( 'This is a Webpage made by DevOps Engineer : VINOD MULEVA.')
+console.log( 'Currently working at LG Electronics BO, Mumbai as an IT Professional.')
+console.log( 'Constantly upgrading this webpage using various strategic methods to improve user experience.')
+console.log( 'For any queries: Contact him')
+console.log( 'Phone: 7304701840')
+console.log( 'WhatsApp: https://wa.me/917304701840')
+console.log( 'He will assist you shortly')
+console.log( 'Stay Updated & Stay Motivated 🚀' )
+    });
+});
+
+// Root route (optional test)
+app.get('/', (req, res) => {
+    res.send("Backend is running successfully 🚀");
+});
+
+// Run server on port 5000
+const PORT = 5000;
+
+app.listen(PORT, () => {
+    console.log(`Backend running on http://localhost:${PORT}`);
+});
